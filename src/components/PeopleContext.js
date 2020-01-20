@@ -12,7 +12,7 @@ export default function PeopleContextProvider(props) {
   );
 
   useEffect(() => {
-    console.log("useEffect");
+    //console.log("useEffect")
   });
 
   return (

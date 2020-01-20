@@ -1,6 +1,6 @@
 import PeopleDirectory from "./data/DefDirectory";
 
-const listPople = PeopleDirectory.people;
+const listPeople = PeopleDirectory.directory.people;
 
 export default function PeopleReducer(state, action) {
   switch (action.type) {
@@ -33,7 +33,7 @@ export default function PeopleReducer(state, action) {
       }
 
       //Filter the Directory
-      const filterDirectory = listPople.filter(function(person) {
+      const filterDirectory = listPeople.filter(function(person) {
         return (
           (filterName === "" ||
             person.name.toLowerCase().indexOf(filterName.toLowerCase()) !==
